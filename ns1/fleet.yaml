@@ -1,0 +1,19 @@
+defaultNamespace: ns-lane1
+helm:
+  releaseName: nginx
+  chart: nginx
+  repo: https://charts.bitnami.com/bitnami
+  version: "21.1.23"
+  values: 
+    replicaCount: 1
+    affinity:
+      nodeAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+          nodeSelectorTerms:
+          - matchExpressions:
+            - key: lane
+              operator: In
+              values:
+              - lane01
+
+
