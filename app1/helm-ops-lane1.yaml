@@ -4,7 +4,7 @@ metadata:
   finalizers:
     - fleet.cattle.io/helmop-finalizer
   name: lane1-app1
-  namespace: fleet-default
+  namespace: fleet-local
 spec:
   correctDrift: {}
   helm:
