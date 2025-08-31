@@ -1,10 +1,10 @@
 defaultNamespace: ns-lane1
+insecureSkipTLSVerify: true
 helm:
   releaseName: app1
   chart: oci://registry.192.168.8.170.sslip.io/my-charts/app1
  # repo: oci://registry.192.168.8.170.sslip.io/my-charts
   version: "0.2.0"
-  insecureSkipTLSVerify: true
   values: 
     replicaCount: 1
     affinity:
