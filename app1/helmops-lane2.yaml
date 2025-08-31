@@ -5,7 +5,7 @@ metadata:
     - fleet.cattle.io/helmop-finalizer
 ##NAME
   name: lane2-app1
-  namespace: fleet-default
+  namespace: fleet-local
 spec:
   correctDrift: {}
   helm:
