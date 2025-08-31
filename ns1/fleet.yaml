@@ -1,9 +1,10 @@
 defaultNamespace: ns-lane1
 helm:
-  releaseName: nginx
-  chart: nginx
-  repo: https://charts.bitnami.com/bitnami
-  version: "21.1.23"
+  releaseName: app1
+  chart: app1
+  repo: oci://registry.192.168.8.170.sslip.io/my-charts
+  version: "0.2.0"
+  insecureSkipTLS: true
   values: 
     replicaCount: 1
     affinity:
