@@ -3,7 +3,7 @@ kind: HelmOp
 metadata:
 ##NAME
   name: lane2-app1
-  namespace: fleet-local
+  namespace: fleet-default
 spec:
   correctDrift: {}
   helm:
