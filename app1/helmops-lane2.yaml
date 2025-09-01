@@ -10,7 +10,7 @@ spec:
     releaseName: app1
     repo: oci://registry.192.168.8.170.sslip.io/my-charts/app1
     values:
-      replicaCount: 1
+      replicaCount: 2
       service:
         type: ClusterIP
   #Release
