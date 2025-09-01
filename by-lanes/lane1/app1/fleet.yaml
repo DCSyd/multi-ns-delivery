@@ -1,6 +1,7 @@
 defaultNamespace: lane1
 helm:
   releaseName: app1
+  releaseNamespace: lane1
   chart: oci://repo.australiaeast.cloudapp.azure.com/my-charts/app1
  # repo: oci://registry.192.168.8.170.sslip.io/my-charts
   version: "0.2.0"
