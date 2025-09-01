@@ -5,14 +5,13 @@ metadata:
   name: lane1-app1
   namespace: fleet-default
 spec:
-  correctDrift:
-    enabled: true
+  correctDrift: {}
   helm:
     releaseName: app1
     releaseNamespace: lane1
     repo: oci://registry.192.168.8.170.sslip.io/my-charts/app1
     values:
-      replicaCount: 2
+      replicaCount: 1
       service:
         type: ClusterIP
   #Release
