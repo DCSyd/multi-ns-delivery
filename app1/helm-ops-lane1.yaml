@@ -8,6 +8,7 @@ spec:
   correctDrift: {}
   helm:
     releaseName: app1
+    releaseNamespace: lane1
     repo: oci://registry.192.168.8.170.sslip.io/my-charts/app1
     values:
       replicaCount: 1
