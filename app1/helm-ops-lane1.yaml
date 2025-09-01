@@ -5,7 +5,8 @@ metadata:
   name: lane1-app1
   namespace: fleet-default
 spec:
-  correctDrift: {}
+  correctDrift:
+    enabled: true
   helm:
     releaseName: app1
     releaseNamespace: lane1
