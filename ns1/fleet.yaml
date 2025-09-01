@@ -1,7 +1,7 @@
 defaultNamespace: ns-lane1
-insecureSkipTLSVerify: true
+insecure: true
 helm:
-  insecureSkipTLSVerify: true
+  insecure: true
   releaseName: app1
   chart: oci://registry.192.168.8.170.sslip.io/my-charts/app1
  # repo: oci://registry.192.168.8.170.sslip.io/my-charts
