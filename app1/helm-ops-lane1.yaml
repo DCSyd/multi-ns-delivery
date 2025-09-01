@@ -1,8 +1,7 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: HelmOp
 metadata:
-  finalizers:
-    - fleet.cattle.io/helmop-finalizer
+##NAME
   name: lane1-app1
   namespace: fleet-local
 spec:
@@ -11,20 +10,13 @@ spec:
     releaseName: app1
     repo: oci://registry.192.168.8.170.sslip.io/my-charts/app1
     values:
-      affinity:
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-              - matchExpressions:
-                  - key: lane
-                    operator: In
-                    values:
-                      - lane01
       replicaCount: 1
       service:
         type: ClusterIP
+  #Release
     version: 0.2.0
   insecureSkipTLSVerify: true
+  #NameSpace
   namespace: lane1
   targets:
     - clusterName: toppan-rhel-rke2
