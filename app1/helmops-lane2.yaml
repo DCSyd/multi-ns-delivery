@@ -1,8 +1,6 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: HelmOp
 metadata:
-  annotations:
-    meta.helm.sh/release-namespace: fleet-default
 ##NAME
   name: lane2-app1
   namespace: fleet-default
