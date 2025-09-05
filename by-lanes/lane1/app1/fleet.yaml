@@ -1,4 +1,4 @@
-defaultNamespace: lane1
+defaultNamespace: lane1-app1
 helm:
   releaseName: app1
   releaseNamespace: lane1
