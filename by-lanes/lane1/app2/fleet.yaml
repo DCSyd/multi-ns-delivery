@@ -1,4 +1,4 @@
-defaultNamespace: lane2
+defaultNamespace: lane1-aap2
 helm:
   releaseName: app2
   chart: oci://repo.australiaeast.cloudapp.azure.com/my-charts/app2
