@@ -1,0 +1,10 @@
+defaultNamespace: lane2-aap2
+helm:
+  releaseName: app2
+  chart: oci://repo.australiaeast.cloudapp.azure.com/my-charts/app2
+ # repo: oci://registry.192.168.8.170.sslip.io/my-charts
+  version: "0.2.1"
+  values: 
+    replicaCount: 1
+    service:
+      type: ClusterIP
